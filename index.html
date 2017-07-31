@@ -14,6 +14,12 @@
 	"image": "http://i.imgur.com/jap3Z9Z.png"
 }
 </script>
+<script type='text/javascript'>
+  $(document).ready(function(){
+    $('iframe1').attr('height', document.documentElement.clientHeight - 35);
+  });
+</script>
+
 </head>
 <style>
   iframe{
@@ -25,7 +31,7 @@
     overflow: hidden;
   }
 </style>
-<iframe name="web" width="100%" frameborder=0 height="100%" src="http://www.iwinbet.net/?code=CFZGW" id="web" onload="this.height=web.document.body.scrollHeight" > 不支援iframe框架時要顯示的文字 </iframe>
+<iframe id="iframe1" name="web" width="100%" frameborder=0 height="100%" src="http://www.iwinbet.net/?code=CFZGW" id="web" onload="this.height=web.document.body.scrollHeight" > 不支援iframe框架時要顯示的文字 </iframe>
 
 </body></html>
 
