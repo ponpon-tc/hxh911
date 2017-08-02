@@ -18,26 +18,13 @@
 </script>
 </head>
 <body>
-<script type="text/javascript">
-function SetCwinHeight() {
-    var iframeid = document.getElementById("mainframe"); //iframe id  
-    if (document.getElementById) {
-        if (iframeid && !window.opera) {
-            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight) {
-                iframeid.height = iframeid.contentDocument.body.offsetHeight;
-            } else if (iframeid.Document && iframeid.Document.body.scrollHeight) {
-                iframeid.height = iframeid.Document.body.scrollHeight;
-            }
-        }
-    }
+<script>
+function aa(){
+  var f=document.getElementById('ff');
+  f.style.height = f.contentWindow.document.body.scrollHeight + 40 + 'px';
 }
 </script>
-
-<iframe src="http://www.iwinbet.net/?code=CFZGW" name="mainframe" id="mainframe"
-	width="100%" marginwidth="0" marginheight="0"
-	scrolling="No" frameborder="0"
-	onload="Javascript:SetCwinHeight()">
-</iframe>
+<iframe frameborder="0" id="ff" onload="aa();" src="http://www.iwinbet.net/registry?code=CFZGW" width="600"></iframe>
 
 </body></html>
 
