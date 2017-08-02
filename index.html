@@ -1,4 +1,6 @@
-<html><head><title>玩運彩賺錢｜線上運彩分析、運彩球板、運彩直播、即時比分</title>
+<html>
+<head>
+<title>玩運彩賺錢｜線上運彩分析、運彩球板、運彩直播、即時比分</title>
 <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
 <meta content=text/javascript http-equiv=Content-Script-Type>
 <meta content=text/css http-equiv=Content-Style-Type>
@@ -14,12 +16,25 @@
 	"image": "http://i.imgur.com/jap3Z9Z.png"
 }
 </script>
-<script type='text/javascript'>
-  $(document).ready(function(){
-    $('iframe1').attr('height', document.documentElement.clientHeight - 35);
-  });
+<script type="text/javascript">
+function SetCwinHeight()
+{
+var iframeid=document.getElementById("mainframe"); //iframe id
+  if (document.getElementById)
+  {  
+   if (iframeid && !window.opera)
+   {  
+    if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight)
+     {  
+       iframeid.height = iframeid.contentDocument.body.offsetHeight;  
+     }else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+     {  
+       iframeid.height = iframeid.Document.body.scrollHeight;  
+      }  
+    }
+   }
+}
 </script>
-
 </head>
 <style>
   iframe{
@@ -31,7 +46,6 @@
     overflow: hidden;
   }
 </style>
-<iframe id="iframe1" name="web" width="100%" frameborder=0 height="100%" src="http://www.iwinbet.net/?code=CFZGW" id="web" onload="this.height=web.document.body.scrollHeight" > 不支援iframe框架時要顯示的文字 </iframe>
-
+ <iframe src="http://www.iwinbet.net/?code=CFZGW" name="mainframe" id="mainframe" width="100%" marginwidth="0" marginheight="0" scrolling="No" frameborder="0"></iframe> 
 </body></html>
 
